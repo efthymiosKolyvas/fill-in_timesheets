@@ -1,0 +1,131 @@
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{margin=0.9in,tmargin=0.7in,lmargin=1.2in,bmargin=0.7in}
+\pagestyle{empty}
+
+\newcommand{\namesigdate}[2][5cm]{
+  \begin{tabular}{@{}p{#1}@{}}
+    \\[0pt]\hrule \\[0pt]
+      {\normalsize \textit{Date \& Signature #2}}
+  \end{tabular}
+}
+
+
+\begin{document}
+
+\centering{\LARGE\textbf{Monthly Timesheet} }
+
+\vspace{20pt}
+
+\begin{minipage}[t]{1\textwidth}
+  \begin{flushright}
+    \vspace{12pt}
+
+    \begin{tabular}{rl}
+      \normalsize ACTION NAME: & \large \texttt{xxxYYY} \\
+      \normalsize MONTH: & \large \texttt{DECEMBER 2018} \\
+    \end{tabular}
+  \end{flushright}
+\end{minipage}
+
+\vspace{0.8cm}
+
+\begin{minipage}{0.9\textwidth}
+  \begin{tabular}{l@{\hspace{20pt}}l}
+    \normalsize Name of Beneficiary: &  \large \large\texttt{\textbf{Client}} \vspace{8pt}\\
+    \normalsize Name of Person working on the action: & \large\texttt{\textbf{Name Surname}}\vspace{8pt}\\
+    \normalsize Type of Personnel: & \large\texttt{Senior Researcher}
+  \end{tabular}
+\end{minipage}
+
+\vspace{0.8cm}
+
+\hspace{0.8cm}
+\begin{minipage}{0.7\textwidth}
+  \normalsize{
+    \begin{tabular}{lccr} 
+ Cal. Day & Reas. for Absence & Action Type & \textbf{Hours} \\ 
+ \hline 
+ \hline\\ 
+1 & WE & - & 0.0\\
+2 & WE & - & 0.0\\
+3 & - & RE & 6.0\\
+4 & - & RE & 6.0\\
+5 & - & RE & 6.0\\
+6 & - & RE & 6.0\\
+7 & - & RE & 6.0\\
+8 & WE & - & 0.0\\
+9 & WE & - & 0.0\\
+10 & - & RE & 6.0\\
+11 & - & RE & 6.0\\
+12 & - & RE & 6.0\\
+13 & - & RE & 6.0\\
+14 & - & RE & 6.0\\
+15 & WE & - & 0.0\\
+16 & WE & - & 0.0\\
+17 & - & RE & 6.0\\
+18 & - & RE & 6.0\\
+19 & - & RE & 6.0\\
+20 & - & RE & 6.0\\
+21 & - & RE & 6.0\\
+22 & WE & - & 0.0\\
+23 & WE & - & 0.0\\
+24 & - & RE & 6.0\\
+25 & PH & - & 0.0\\
+26 & PH & - & 0.0\\
+27 & - & RE & 6.0\\
+28 & - & RE & 6.0\\
+29 & WE & - & 0.0\\
+30 & WE & - & 0.0\\
+31 & - & RE & 6.0\\
+\hline\\ 
+ \textbf{Total:} & & & \textbf{114.0}\\ 
+ \hline 
+\end{tabular}
+
+  }
+\end{minipage}
+%
+\begin{minipage}[r]{0.2\textwidth}
+  \vspace{8.2cm}
+  \small{
+    \begin{flushright}
+      \begin{tabular}{ll}
+        \hline\\
+        \vspace{0.4pt}
+        Absences &    \vspace{0.7pt}\\
+        \hline\\
+        \vspace{0.5pt}
+        Weekend & WE  \\
+        Public Holiday & PH   \\
+        Other Absence & OA \\
+        \hline
+      \end{tabular}
+    \end{flushright}
+
+    \vspace{10pt}
+
+    \begin{flushright}
+      \begin{tabular}{ll}
+        \hline\\
+        \vspace{0.4pt}
+        Action Types &  \vspace{0.7pt}\\
+        \hline\\
+        \vspace{0.5pt}
+        Research & RE \\
+        Dissemination & DI  \\
+        Other Type & OT\\
+        \hline
+      \end{tabular}
+    \end{flushright}
+  }
+\end{minipage}
+
+
+
+\vfill
+
+\noindent \namesigdate[8cm]{of Person working on the action} \hfill \namesigdate[6cm]{of Supervisor}
+
+\end{document}

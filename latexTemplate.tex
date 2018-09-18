@@ -1,0 +1,92 @@
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{margin=0.9in,tmargin=0.7in,lmargin=1.2in,bmargin=0.7in}
+\pagestyle{empty}
+
+\newcommand{\namesigdate}[2][5cm]{
+  \begin{tabular}{@{}p{#1}@{}}
+    \\[0pt]\hrule \\[0pt]
+      {\normalsize \textit{Date \& Signature #2}}
+  \end{tabular}
+}
+
+
+\begin{document}
+
+\centering{\LARGE\textbf{Monthly Timesheet} }
+
+\vspace{20pt}
+
+\begin{minipage}[t]{1\textwidth}
+  \begin{flushright}
+    \vspace{12pt}
+
+    \begin{tabular}{rl}
+      \normalsize ACTION NAME: & \large \texttt{$projectName$} \\
+      \normalsize MONTH: & \large \texttt{$dateMMYYYY$} \\
+    \end{tabular}
+  \end{flushright}
+\end{minipage}
+
+\vspace{0.8cm}
+
+\begin{minipage}{0.9\textwidth}
+  \begin{tabular}{l@{\hspace{20pt}}l}
+    \normalsize Name of Beneficiary: &  \large \large\texttt{\textbf{$client$}} \vspace{8pt}\\
+    \normalsize Name of Person working on the action: & \large\texttt{\textbf{$personnelName$}}\vspace{8pt}\\
+    \normalsize Type of Personnel: & \large\texttt{Senior Researcher}
+  \end{tabular}
+\end{minipage}
+
+\vspace{0.8cm}
+
+\hspace{0.8cm}
+\begin{minipage}{0.7\textwidth}
+  \normalsize{
+    $body$
+  }
+\end{minipage}
+%
+\begin{minipage}[r]{0.2\textwidth}
+  \vspace{8.2cm}
+  \small{
+    \begin{flushright}
+      \begin{tabular}{ll}
+        \hline\\
+        \vspace{0.4pt}
+        Absences &    \vspace{0.7pt}\\
+        \hline\\
+        \vspace{0.5pt}
+        Weekend & WE  \\
+        Public Holiday & PH   \\
+        Other Absence & OA \\
+        \hline
+      \end{tabular}
+    \end{flushright}
+
+    \vspace{10pt}
+
+    \begin{flushright}
+      \begin{tabular}{ll}
+        \hline\\
+        \vspace{0.4pt}
+        Action Types &  \vspace{0.7pt}\\
+        \hline\\
+        \vspace{0.5pt}
+        Research & RE \\
+        Dissemination & DI  \\
+        Other Type & OT\\
+        \hline
+      \end{tabular}
+    \end{flushright}
+  }
+\end{minipage}
+
+
+
+\vfill
+
+\noindent \namesigdate[8cm]{of Person working on the action} \hfill \namesigdate[6cm]{of Supervisor}
+
+\end{document}
